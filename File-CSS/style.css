@@ -34,6 +34,7 @@ main>.main-up{
 main>.main-down{
     background-color: rgb(25, 25, 46);
     height: calc(100% - 10vh);
+    overflow: auto;
 }
 
 
@@ -57,4 +58,94 @@ footer{
         float: left;
     }
 
+}
+
+/* main-up */
+
+.main-up>span{
+    border: 3px solid white;
+    border-radius: 20px;
+    color: white;
+    width: 13.3rem;
+    height: 2.3rem;
+    display: inline-block;
+    line-height: 2.3rem;
+    text-align: center;
+    font-size: 0.75rem;  
+    margin-right: 5px;
+}
+
+.main-up{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* nav */
+
+nav *{
+    color: rgb(75, 69, 69);
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+nav>span,nav>i{
+    color:white;
+    font-size:1.3rem ;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+nav>i{
+    margin-right: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+nav .white-li{
+    color: white;
+}
+
+nav li{
+    margin-bottom: 0.65rem;
+    margin-left: 15px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav.relative{
+    position: relative;
+}
+
+nav div.absolute{
+    position: absolute;
+    bottom:1%;
+    width:100%;
+}
+
+nav span.download{
+    margin-right: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-size: 0.7rem;
+}
+
+nav hr{
+    margin-top:10px ;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+nav span.jhon{
+    color:white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    
 }
