@@ -4,3 +4,57 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Macrostruttura generale */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+nav{
+    float: left;
+    background-color: black;
+    width: 210px;
+    height: calc(100vh - 10vh);
+}
+
+main{
+    width: calc(100% - 210px);
+    height:calc(100vh - 10vh) ;
+    float: left;
+}
+
+main>.main-up{
+    background-color: rgb(2, 2, 33);
+    height: 10vh;
+}
+
+main>.main-down{
+    background-color: rgb(25, 25, 46);
+    height: calc(100% - 10vh);
+}
+
+
+footer{
+    background-color: rgb(44, 43, 43);
+    height: 10vh;
+}
+
+/* Macrostruttura generale versione smartphone */
+
+@media screen and (max-width:480px){
+    nav{
+        float: left;
+        background-color: black;
+        width: 35px;
+        height: calc(100vh - 10vh);
+    }
+    main{
+        width: calc(100% - 35px);
+        height:calc(100vh - 10vh) ;
+        float: left;
+    }
+
+}
