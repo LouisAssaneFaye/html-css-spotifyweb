@@ -243,13 +243,127 @@ div.absolute-xs{
         margin-bottom: 1rem;
     }
 
+}
+
+/* footer*/
+
+div.left.flex{
+    width:210px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+div.part1.flex{
+    display: flex;
+    height: 100%;
+}
+
+div.immagine,.div.testo.flex{
+    height: 100%;
+}
+
+div.immagine{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+div.immagine img{
+    width: 2rem;
+    height: 45%;
+    object-fit: cover;
+}
+
+div.part2{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+div.part2>i{
+    color: rgb(110, 110, 110);
+}
+
+div.part2>i:first-child{
+    margin-right: 12px;
+    font-size: 0.85rem;
+}
+
+div.part2>i:last-child{
+    margin-right: 10px;
+    font-size: 0.85rem;
+}
+
+div.part1.flex br{
+    display: none;
+}
+
+div.testo.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.60rem;
+    font-weight: bold;
+}
+
+div.testo.flex>span:first-child{
+    color: white;
+}
+
+div.testo.flex>span:last-child{
+    color: rgb(110, 110, 110);
+}
 
 
+/*footer versione s*/
+@media screen and (max-width:768px){
     
-
-
-
+    div.left.flex{
+        width:210px;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+    }
     
+    div.part2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 21px;
+    }
 
+    div.part2>i:first-child{
+        font-size: 0.85rem;
+        margin-bottom: 4px;
+        margin-top: 0px;
+    }
+
+    div.part2>i:last-child{
+        font-size: 0.85rem;
+    }
+
+}
+
+/*footer versione xs*/
+@media screen and (max-width:576px){
+    
+    div.part1.flex br{
+        display: inline;
+    }
+    
+    div.immagine img{
+        width: 1.5rem;
+        height: 1.5rem;
+        object-fit: cover;
+    }
+
+    div.immagine{
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 6px;
+    }
 
 }
