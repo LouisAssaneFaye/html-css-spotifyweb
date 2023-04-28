@@ -247,6 +247,12 @@ div.absolute-xs{
 
 /* footer*/
 
+footer.flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 div.left.flex{
     width:210px;
     display: flex;
@@ -316,6 +322,35 @@ div.testo.flex>span:last-child{
     color: rgb(110, 110, 110);
 }
 
+footer>div.right{
+    width: 210px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+
+footer div.range-volume{
+    width: 60%;
+    height: 3px;
+    background-color: rgb(86, 86, 86);
+    border: 3px;
+}
+
+footer div.value-volume{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(171, 171, 171);
+    border-radius: 3px;
+}
+
+footer div.right>i{
+    margin-right: 12px;
+    font-size: 0.75rem;
+}
+
 
 /*footer versione s*/
 @media screen and (max-width:768px){
@@ -364,6 +399,21 @@ div.testo.flex>span:last-child{
         align-items: center;
         margin-right: 10px;
         margin-left: 6px;
+    }
+
+    footer>div.right{
+        width: 150px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 10px;
+        color: white;
+    }
+
+    footer div.right>i{
+        margin-right: 9px;
+        font-size: 0.75rem;
     }
 
 }
