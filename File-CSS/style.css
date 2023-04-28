@@ -330,6 +330,7 @@ footer>div.right{
     align-items: center;
     margin-right: 10px;
     color: white;
+    
 }
 
 footer div.range-volume{
@@ -369,13 +370,14 @@ div.center .center-up>i{
     margin-left: 18px;
 }
 
+
 div.time-range{
     display: inline-block;
     height: 3px;
     width: 400px;
     background-color: rgb(86, 86, 86);
-    margin-left: 18px;
-    margin-right: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 3px;
 }
 
@@ -388,18 +390,61 @@ div.time-value{
 
 div.center-down>span{
     color: white;
-    font-size: 0.65rem;
+    font-size: 0.6rem;
 }
+
+/*footer versione md*/
+@media screen and (max-width:992px){
+    
+    div.time-range{
+        display: inline-block;
+        height: 3px;
+        width: 200px;
+        background-color: rgb(86, 86, 86);
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 3px;
+    }    
+
+    div.center .center-up>i:first-child{
+        margin-left: -2px;
+    }
+    
+}
+
 
 
 /*footer versione s*/
 @media screen and (max-width:768px){
     
+    div.time-range{
+        display: inline-block;
+        height: 3px;
+        width: 115px;
+        background-color: rgb(86, 86, 86);
+        margin-left: 8px;
+        margin-right: 8px;
+        border-radius: 3px;
+    }    
+
+    div.center .center-up>i:first-child{
+        margin-left: 16px;
+    }
+
+    div.center .center-up>i{
+        margin-left: 22.5px;
+    }
+    
     div.left.flex{
-        width:210px;
+        width:160px;
         display: flex;
         justify-content: flex-start;
         height: 100%;
+    }
+
+    footer div.right>i{
+        margin-right: 6px;
+        font-size: 0.75rem;
     }
     
     div.part2{
@@ -417,6 +462,10 @@ div.center-down>span{
 
     div.part2>i:last-child{
         font-size: 0.85rem;
+    }
+
+    div.center-down{
+        padding-left: 15px;
     }
 
 }
@@ -442,7 +491,7 @@ div.center-down>span{
     }
 
     footer>div.right{
-        width: 150px;
+        width: 130px;
         height: 100%;
         display: flex;
         justify-content: space-between;
@@ -452,8 +501,32 @@ div.center-down>span{
     }
 
     footer div.right>i{
-        margin-right: 9px;
+        margin-right: 6.5px;
         font-size: 0.75rem;
+    }
+
+    div.time-range{
+        display: inline-block;
+        height: 3px;
+        width: 80px;
+        background-color: rgb(86, 86, 86);
+        margin-left: 8px;
+        margin-right: 8px;
+        border-radius: 3px;
+    }    
+
+    div.time-range{
+        display: inline-block;
+        height: 3px;
+        width: 100px;
+        background-color: rgb(86, 86, 86);
+        margin-left: 8px;
+        margin-right: 8px;
+        border-radius: 3px;
+    }    
+
+    footer div.center{
+        margin-left: -34px;
     }
 
 }
