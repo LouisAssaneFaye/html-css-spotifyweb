@@ -336,7 +336,7 @@ footer div.range-volume{
     width: 60%;
     height: 3px;
     background-color: rgb(86, 86, 86);
-    border: 3px;
+    border-radius: 3px;
 }
 
 footer div.value-volume{
@@ -349,6 +349,46 @@ footer div.value-volume{
 footer div.right>i{
     margin-right: 12px;
     font-size: 0.75rem;
+}
+
+div.center>.center-up{
+    font-size: 0.9rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+div.center .fa-circle-play{
+    font-size: 1.5rem;
+}
+
+div.center .center-up>i{
+    margin-left: 18px;
+}
+
+div.time-range{
+    display: inline-block;
+    height: 3px;
+    width: 400px;
+    background-color: rgb(86, 86, 86);
+    margin-left: 18px;
+    margin-right: 18px;
+    border-radius: 3px;
+}
+
+div.time-value{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(171, 171, 171);
+    border-radius: 3px;
+}
+
+div.center-down>span{
+    color: white;
+    font-size: 0.65rem;
 }
 
 
