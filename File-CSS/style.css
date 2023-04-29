@@ -71,7 +71,7 @@ footer{
     display: inline-block;
     line-height: 2.3rem;
     text-align: center;
-    font-size: 0.75rem;  
+    font-size: 0.68rem;  
     margin-right: 5px;
 }
 
@@ -81,17 +81,47 @@ footer{
     align-items: center;
 }
 
+/* main-down */
+
+.main-down-up.flex{
+    color: rgb(75, 69, 69);
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-bottom:35px;
+}
+
+.main-down h1{
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+.main-down-up.flex ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.main-down .main-down-up ul{
+    list-style-type: none;
+}
+
+.main-down-up li{
+    margin-left: 0.5rem;
+}
+
+
 /* nav */
 
 nav *{
     color: rgb(75, 69, 69);
     font-weight: bold;
-    font-size: 0.75rem;
+    font-size: 0.63rem;
 }
 
 .nav-bigger-than-xs>span,.nav-bigger-than-xs>i{
     color:white;
-    font-size:1.3rem ;
+    font-size:1.1rem ;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -100,14 +130,14 @@ nav *{
     margin-right: 5px;
     margin-left: 15px;
     margin-top: 10px;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 ul.n2 i{
     margin-right: 5px;
     margin-left: 0px;
     margin-top: 0px;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     color: white;
 }
 
@@ -118,12 +148,12 @@ ul.n2 i{
 ul.n1 i{
     margin-right: 5px;
     margin-left: 0px;
-    font-size: 1rem;
+    font-size: 0.63rem;
 }
 
 ul.n1 img{
-    width: 1rem;
-    height: 1rem;
+    width: 0.63rem;
+    height: 0.63rem;
     object-fit: cover;
 }
 
@@ -131,7 +161,7 @@ ul.n1 img{
 span.jhon i{
     margin-right: 5px;
     margin-left: 0px;
-    font-size: 1.1rem;
+    font-size: 0.63rem;
     color: white;
 }
 
@@ -142,7 +172,7 @@ span.jhon i{
 }
 
 .nav-bigger-than-xs li{
-    margin-bottom: 0.68rem;
+    margin-bottom: 0.63rem;
     margin-left: 15px;
 }
 
@@ -164,8 +194,7 @@ nav.relative span.download{
     margin-right: 5px;
     margin-left: 15px;
     margin-top: 10px;
-    font-size: 1.8rem;
-    font-size: 0.7rem;
+    font-size: 0.63rem;
 }
 
 nav.relative hr{
@@ -177,7 +206,7 @@ nav.relative hr{
 
 nav.relative span.jhon{
     color:white;
-    font-size: 0.9rem;
+    font-size: 0.64rem;
     font-weight: bold;
     margin-left: 15px;
     margin-bottom: 10px;
@@ -212,15 +241,14 @@ div.absolute-xs{
     }
 
     div.nav-xs img{
-        width: 1rem;
-        height: 1rem;
+        width: 0.63rem;
+        height: 0.63rem;
         object-fit: cover;
     }
 
     nav.relative span.download{
         width: 35px;
-        font-size: 1.8rem;
-        font-size: 0.7rem;
+        font-size: 0.63rem;
         display: flex;
         justify-content: center;
         margin-left: -2px;
@@ -229,7 +257,7 @@ div.absolute-xs{
 
     nav.relative span.jhon{
         color:white;
-        font-size: 0.9rem;
+        font-size: 0.5rem;
         font-weight: bold;
         width: 35px;
         display: flex;
@@ -241,16 +269,16 @@ div.absolute-xs{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 0.68rem;
+        margin-bottom: 0.63rem;
     }
 
     div.nav-xs i{
-        font-size: 1rem;
-        margin-bottom: 0.68rem;
+        font-size: 0.63rem;
+        margin-bottom: 0.63rem;
     }
 
     div.nav-xs i:first-child{
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         color: white;
         margin-top: 5px;
         margin-bottom: 1rem;
