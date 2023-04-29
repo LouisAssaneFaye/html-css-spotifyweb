@@ -66,12 +66,12 @@ footer{
     border: 1px solid white;
     border-radius: 20px;
     color: white;
-    width: 10.2rem;
-    height: 1.8rem;
+    width: 10rem;
+    height: 1.7rem;
     display: inline-block;
-    line-height: 1.8rem;
+    line-height: 1.7rem;
     text-align: center;
-    font-size: 0.59rem;  
+    font-size: 0.58rem;  
     font-weight: bold;
     margin-right: 3px;
 }
@@ -85,16 +85,93 @@ footer{
 /* main-down */
 
 .main-down-up.flex{
-    color: rgb(75, 69, 69);
+    color: rgb(103, 103, 103);
     font-weight: bold;
-    font-size: 0.75rem;
-    margin-bottom:35px;
+    font-size: 0.58rem;
+    margin-bottom:25px;
 }
 
 .main-down h1{
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
+
+.Recently-played-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-down .card{
+    width:calc(100% / 6);
+    text-align: center;
+    border: 1px solid white;
+}
+
+.Recently-played{
+    width:96% ;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.Creato-per-Jhon-Doe>span,.Artisti-più-popolari>span{
+    margin-top:10px ;
+    margin-bottom: 10px;
+    font-size: 0.56rem;
+    color: rgb(103, 103, 103);
+}
+
+.Creato-per-Jhon-Doe>h1,.Artisti-più-popolari>h1{
+    margin-bottom: 10px;
+}
+
+.Artisti-più-popolari{
+    width:96% ;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.Artisti-più-popolari-container{
+    width: 100%;
+    display: flex;
+}
+
+.Artisti-più-popolari-container .card{
+    width:calc(100% / 6);
+    text-align: center;
+}
+
+.card-up{
+    background-color: black;
+    height: 115px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card-down h2{
+    color:white;
+    font-size: 0.7rem;
+}
+
+.Creato-per-Jhon-Doe{
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.Creato-per-Jhon-Doe-container{
+    display: flex;
+}
+
+.card-down span{
+    color: rgb(103, 103, 103);
+    font-size: 0.55rem;
+    font-weight: bold;
+}
+
+
+
 
 
 .main-down-up.flex ul{
