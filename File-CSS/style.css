@@ -82,13 +82,68 @@ footer{
     align-items: center;
 }
 
+.main-up>span:hover{
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    width: 11rem;
+    height: 1.9rem;
+    display: inline-block;
+    line-height: 1.9rem;
+    text-align: center;
+    font-size: 0.65rem;  
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+
 /* main-down */
+
+.card-up{
+    position: relative;
+}
+
+div.sfondo-nero{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0%;
+    right: 0%;
+}
+
+.Artisti-più-popolari div.sfondo-nero{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: none;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0%;
+    right: 0%;
+}
+
+div.sfondo-nero i{
+    color: white;
+    font-size: 3rem;
+}
+
+.card:hover .sfondo-nero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .main-down-up.flex{
     color: rgb(103, 103, 103);
     font-weight: bold;
     font-size: 0.58rem;
     margin-bottom:25px;
+}
+
+.main-down-up li:hover{
+    color:white;
 }
 
 .main-down h1{
@@ -101,18 +156,25 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    height: calc(100vw / 4);
 }
 
 .main-down .card{
-    width:calc(100% / 6);
+    width:16.2%;
     text-align: center;
-    border: 1px solid white;
+    margin-right: 4px;
 }
 
 .Recently-played{
-    width:96% ;
+    width:98% ;
     margin: 0 auto;
     margin-bottom: 25px;
+}
+
+.card-up>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .Creato-per-Jhon-Doe>span,.Artisti-più-popolari>span{
@@ -123,30 +185,50 @@ footer{
 }
 
 .Creato-per-Jhon-Doe>h1,.Artisti-più-popolari>h1{
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .Artisti-più-popolari{
-    width:96% ;
+    width:98% ;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 60px;
 }
 
 .Artisti-più-popolari-container{
     width: 100%;
     display: flex;
+    height: calc(100vw / 4);
+    margin-top: 10px;
 }
 
 .Artisti-più-popolari-container .card{
-    width:calc(100% / 6);
+    width:16.2%;
     text-align: center;
 }
 
 .card-up{
-    background-color: black;
-    height: 115px;
+    height: 50%;
     margin-bottom: 10px;
     margin-top: 10px;
+    
+}
+
+.Artisti-più-popolari .card-up{
+    width: 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+    height: calc((100vw - 210px) * 0.162);
+    margin-bottom: 10px;
+}
+
+.Artisti-più-popolari .card-up>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.Artisti-più-popolari .card{
+    margin-right: 10px;
 }
 
 .card-down h2{
@@ -155,23 +237,22 @@ footer{
 }
 
 .Creato-per-Jhon-Doe{
-    width: 96%;
+    width: 98%;
     margin: 0 auto;
     margin-bottom: 25px;
 }
 
 .Creato-per-Jhon-Doe-container{
     display: flex;
+    height: calc(100vw / 4);
 }
+
 
 .card-down span{
     color: rgb(103, 103, 103);
     font-size: 0.55rem;
     font-weight: bold;
 }
-
-
-
 
 
 .main-down-up.flex ul{
@@ -189,6 +270,166 @@ footer{
 }
 
 
+/* main-down versione md */
+
+@media screen and (max-width:992px){
+    .main-down-up.flex{
+        color: rgb(103, 103, 103);
+        font-weight: bold;
+        font-size: 0.81rem;
+        margin-bottom:25px;
+    }
+    
+    .main-down-up.flex ul {
+        flex-wrap: wrap;
+      }
+
+      .main-down-up.flex li:last-child {
+        margin-top: 43px;
+      }
+
+    .main-down .card{
+        width:24%;
+        text-align: center;
+        margin-right: 4px;
+    }
+
+    .Recently-played-container{
+        flex-wrap: wrap;
+    }
+
+    .Recently-played-container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        height: calc(100vw / 2);
+    }
+
+
+    .Creato-per-Jhon-Doe-container{
+        display: flex;
+        height: calc(100vw / 2);
+    }
+
+    .card-up{
+        height: 64%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        
+    }
+
+    .Artisti-più-popolari .card-up{
+        width: 100%;
+        border-radius: 50%;
+        margin: 0 auto;
+        height: calc((100vw - 210px) * 0.24);
+        margin-bottom: 10px;
+    }
+
+}
+
+/* main-down versione s */
+
+@media screen and (max-width:768px){
+    
+    
+    .main-down-up.flex ul {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main-down-up.flex li:nth-child(4) {
+        margin-top: 35px;
+      }
+
+      .main-down-up.flex li:nth-child(5) {
+        margin-top: 35px;
+      }
+
+      .main-down-up.flex li:nth-child(6) {
+        margin-top: 35px;
+      }
+
+    .main-down .card{
+        width:48%;
+        text-align: center;
+        margin-right: 4px;
+    }
+
+    .Recently-played-container{
+        height: 130vw;
+    }
+
+    .Artisti-più-popolari .card-up{
+        height: calc((100vw - 210px) * 0.48);
+    }
+    
+    .Creato-per-Jhon-Doe-container{
+        display: flex;
+        height: 130vw;
+    }
+
+    .Creato-per-Jhon-Doe .card-up{
+        height: 72%;
+    }
+
+    .Artisti-più-popolari-container{
+        height: 42vw;
+    }
+
+    .Creato-per-Jhon-Doe-container{
+        height: 42vw;
+    }
+
+
+}
+
+/* main-down versione xs */
+@media screen and (max-width:576px){
+    
+    .main-down-up li {
+        margin-left: 0.9rem;
+      }
+    
+    .main-down-up.flex ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+    .main-down-up.flex {
+        font-size: 0.68rem;
+      }
+    
+    .main-down-up.flex li:nth-child(4) {
+        margin-top: 0px;
+      }
+
+      .main-down-up.flex li:nth-child(5) {
+        margin-top: 35px;
+      }
+
+      .main-down-up.flex li:nth-child(6) {
+        margin-top: 35px;
+      }
+    
+    .Recently-played-container{
+        height: 175vw;
+    }
+
+    .Recently-played-container .card-up{
+        height: 75%;
+    }
+
+    .Creato-per-Jhon-Doe-container {
+        height: 62vw;
+    }
+
+    .Artisti-più-popolari .card-up {
+        height: calc((100vw - 35px) * 0.48);
+      }
+
+}   
+
 /* nav */
 
 nav *{
@@ -196,6 +437,15 @@ nav *{
     font-weight: bold;
     font-size: 0.63rem;
 }
+
+nav *:hover{
+   color: white;
+}
+
+nav *:hover hr{
+    color: rgb(75, 69, 69);
+ }
+ 
 
 .nav-bigger-than-xs>span,.nav-bigger-than-xs>i{
     color:white;
@@ -216,7 +466,7 @@ ul.n2 i{
     margin-left: 0px;
     margin-top: 0px;
     font-size: 1.3rem;
-    color: white;
+    color: rgb(75, 69, 69);
 }
 
 .fa-house{
@@ -411,6 +661,10 @@ div.part2>i{
     color: rgb(110, 110, 110);
 }
 
+div.part2>i:hover{
+    color: white;
+}
+
 div.part2>i:first-child{
     margin-right: 12px;
     font-size: 0.85rem;
@@ -441,6 +695,11 @@ div.testo.flex>span:last-child{
     color: rgb(110, 110, 110);
 }
 
+div.testo.flex>span:last-child:hover{
+    color: white;
+    text-decoration: underline;
+}
+
 footer>div.right{
     width: 210px;
     height: 100%;
@@ -466,6 +725,13 @@ footer div.value-volume{
     border-radius: 3px;
 }
 
+footer div.value-volume:hover{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(14, 202, 14);
+    border-radius: 3px;
+}
+
 footer div.right>i{
     margin-right: 12px;
     font-size: 0.75rem;
@@ -483,6 +749,10 @@ div.center>.center-up{
 
 div.center .fa-circle-play{
     font-size: 1.5rem;
+}
+
+div.center .fa-circle-play:hover{
+    font-size: 1.7rem;
 }
 
 div.center .center-up>i{
@@ -504,6 +774,13 @@ div.time-value{
     width: 15%;
     height: 100%;
     background-color: rgb(171, 171, 171);
+    border-radius: 3px;
+}
+
+div.time-value:hover{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(14, 202, 14);
     border-radius: 3px;
 }
 
